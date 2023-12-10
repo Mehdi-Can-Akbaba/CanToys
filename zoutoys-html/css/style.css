@@ -254,20 +254,20 @@ a:focus {
 
 /* Alt Menü Arka Plan Rengi */
 .dropdown-menu {
-  background-color: #969494; /* Arka plan rengini istediğiniz renkle değiştirin */
+  background-color: #969494; 
 }
 
 /* Alt Menü Elemanlarının Arka Plan Rengi */
 .dropdown-item {
-  background-color: #969494; /* Arka plan rengini istediğiniz renkle değiştirin */
+  background-color: #969494; 
 }
 
 /* Üzerine Gelindiğinde Alt Menü Elemanının Arka Plan Rengi */
 .dropdown-item:hover {
-  background-color: #c58532; /* Arka plan rengini istediğiniz renkle değiştirin */
+  background-color: #c58532; 
 }
 
-.center{
+.center0{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -277,12 +277,12 @@ a:focus {
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
 }
-.center h1{
+.center0 h1{
   text-align: center;
   padding: 20px 0;
   border-bottom: 1px solid rgb(0, 0, 0);
 }
-.center form{
+.center0 form{
   padding: 0 40px;
   box-sizing: border-box;
 }
@@ -366,10 +366,8 @@ input[type="submit"]:hover{
 .signup_link a:hover{
   text-decoration: underline;
 }
-
-
-
 /*end header section*/
+
 /* slider section */
 .slider_section {
   -webkit-box-flex: 1;
@@ -620,7 +618,7 @@ input[type="submit"]:hover{
 }
 
 .shop_section {
-  background-color: rgb(32, 50, 71);
+  background-color: rgb(197, 104, 49);
 }
 
 .shop_section .heading_container {
@@ -685,7 +683,7 @@ input[type="submit"]:hover{
 .shop_section .btn-box a {
   display: inline-block;
   padding: 10px 40px;
-  background-color: #ff0000;
+  background-color: #203247;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
@@ -786,6 +784,7 @@ input[type="submit"]:hover{
 }
 
 /* client section end */
+
 .contact_section {
   position: relative;
 }
