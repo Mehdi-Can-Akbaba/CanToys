@@ -1,48 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
-
-  <title> CAN Oyuncak </title>
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-
-  <style>
-    
-  </style>
-
-</head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="">
+  
+    <title> CAN Oyuncak </title>
+  
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+  
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+  
+  </head>
 
 <body class="sub_page">
 
-  <div class="hero_area">
-
-    <!-- header section strats -->
     <header class="header_section">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
@@ -69,9 +62,18 @@
                     ÜRÜNLERİMİZ
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
-                   <a class="dropdown-item" href="0-3.html">0-3 Yaş</a>
-                   <a class="dropdown-item" href="3-9.html">3-9 Yaş</a>
-                   <a class="dropdown-item" href="9-12.html">9-12 Yaş</a>
+                    <a class="dropdown-item" href="0-3.html">0-3 Yaş</a>
+                    <a class="dropdown-item" href="3-9.html">3-9 Yaş</a>
+                    <a class="dropdown-item" href="9-12.html">9-12 Yaş</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownShopping" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SEPET
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownShopping">
+                    <a class="dropdown-item" href="#">Sepetim</a>
+                    <a class="dropdown-item" href="#">Ürünlerim</a>
                   </div>
                 </li>
                 <li class="nav-item">
@@ -90,118 +92,43 @@
           </nav>
         </div>
       </header>
-    <!-- end header section -->
-  </div>
 
-  <!-- shop section -->
-
-  <section class="shop_section layout_padding" >
+  <!-- Sepetim bölümü -->
+  <section class="cart_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
-          Ürünlerimiz
-        </h2>
+        <h2>Sepetim</h2>
       </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/çıngırak.png" alt="">
-              </div>
-              <div class="detail-box">
-                <a href="">
-                  Toy for kids
-                </a>
-                <h6>
-                  Price
-                  $50
-                </h6>
-              </div>
-            </a>
+      <div id="cartContent">
+        <!-- Sepet içeriği burada gösterilebilir -->
+        <!-- Örneğin: Ürün adı, fiyat, miktar, toplam fiyat, silme seçeneği, vb. -->
+        <div class="cart_item">
+          <div class="item_detail">
+            <img src="images/urun_resmi.jpg" alt="Ürün Resmi">
+            <div class="item_info">
+              <h3>Ürün Adı</h3>
+              <p>Fiyat: $50</p>
+              <input type="number" value="1" min="1" class="quantity_input">
+              <button class="btn btn-success btn-sm" onclick="updateQuantity('Ürün Adı')">Güncelle</button>
+            </div>
+          </div>
+          <div class="item_total">
+            <p>Toplam: $50</p>
+            <button class="btn btn-danger btn-sm" onclick="removeFromCart('Ürün Adı')">Sil</button>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/diş kaşıyıcı.png" alt="">
-              </div>
-              <div class="detail-box">
-                <a href="">
-                  Toy for kids
-                </a>
-                <h6>
-                  Price
-                  $35
-                </h6>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/araba.png" alt="">
-              </div>
-              <div class="detail-box">
-                <a href="">
-                  Toy for kids
-                </a>
-                <h6>
-                  Price
-                  $45
-                </h6>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/zürafaçıngırak.png" alt="">
-              </div>
-              <div class="detail-box">
-                <a href="">
-                  Toy for kids
-                </a>
-                <h6>
-                  Price
-                  $50
-                </h6>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/Frame 1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <a href="">
-                  Toy for kids
-                </a>
-                <h6>
-                  Price
-                  $50
-                </h6>
-              </div>
-            </a>
-          </div>
-        </div>
+        <!-- Diğer sepet öğeleri buraya eklenir -->
+      </div>
+      <div class="total_section">
+        <h4>Toplam Fiyat: $<span id="totalPrice">50</span></h4>
       </div>
     </div>
   </section>
+  <!-- end cart section -->
 
-  <!-- end shop section -->
+ <!-- info section -->
 
-  <!-- info section -->
-
-  <section class="info_section layout_padding2">
+ <section class="info_section layout_padding2">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3 info_col">
@@ -210,37 +137,37 @@
               Address
             </h4>
             <div class="contact_link_box">
-              <a href="https://www.google.com/maps/place/%C4%B0zmit,+Kocaeli/@40.771114,29.934501,13z/data=!3m1!4b1!4m6!3m5!1s0x14cb4f66644bfb9d:0x82690ee7586b7eb9!8m2!3d40.7654408!4d29.9408089!16zL20vMDF4XzM2?entry=ttu">
+              <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Kocaeli
+                  Location
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Tel: +90 262 123 45 66
+                  Call +01 1234567890
                 </span>
               </a>
-              <a href="https://mail.google.com/">
+              <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  cantoys@gmail.com
+                  demo@gmail.com
                 </span>
               </a>
             </div>
           </div>
           <div class="info_social">
-            <a href="https://tr-tr.facebook.com/">
+            <a href="">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="https://twitter.com/">
+            <a href="">
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
-            <a href="https://www.linkedin.com/">
+            <a href="">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
-            <a href="https://www.instagram.com/">
+            <a href="">
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
@@ -251,8 +178,7 @@
               Info
             </h4>
             <p>
-              CAN Oyuncak ltd. şti. <br>
-              Tüm hakları saklıdır.
+              CAN Oyuncak ltd. şti. Tüm hakları saklıdır.
             </p>
           </div>
         </div>
@@ -321,7 +247,22 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-  
+
+  <!-- (Diğer script etiketleri ve bağlantılar) -->
+
+  <script type="text/javascript">
+    function updateQuantity(productName) {
+      // Örneğin: Ürün miktarını güncelleme işlemi
+      var quantityInput = document.querySelector('.quantity_input');
+      var newQuantity = parseInt(quantityInput.value);
+
+      // Burada sepet içeriğini ve toplam fiyatı güncelleme işlemleri yapabilirsiniz
+
+      // Örneğin: Toplam fiyatı güncelleme
+      var totalPriceElement = document.getElementById('totalPrice');
+      totalPriceElement.textContent = newQuantity * 50;
+    }
+  </script>
 
 </body>
 
